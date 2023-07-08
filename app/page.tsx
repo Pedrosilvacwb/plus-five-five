@@ -1,14 +1,14 @@
-import AboutHome from "@/components/AboutHome";
-import Features from "@/components/Features";
-import HeroSection from "@/components/HeroSection";
-import InstagramSlider from "@/components/InstagramSlider";
-import Products from "@/components/Products";
-import Promos from "@/components/Promos";
-import Testimonials from "@/components/Testimonials";
+import AboutHome from "@/components/Home/AboutHome";
+import Features from "@/components/Home/Features";
+import HeroSection from "@/components/Home/HeroSection";
+import InstagramSlider from "@/components/Home/InstagramSlider";
+import Products from "@/components/Home/Products";
+import Promos from "@/components/Home/Promos";
+import Testimonials from "@/components/Home/Testimonials";
 
 const page = () => {
   return (
-    <div className="w-full  max-w-[100vw] overflow-x-hidden">
+    <div className="w-full  max-w-[100vw] overflow-x-hidden ">
       <HeroSection />
       <AboutHome />
       <Products />

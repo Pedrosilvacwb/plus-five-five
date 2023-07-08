@@ -35,3 +35,26 @@
   top: 0;
   transform: rotate(180deg);
 }
+
+.modal::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 32px;
+}
+
+/* Track */
+.modal::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 32px;
+}
+
+/* Handle */
+.modal::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 32px;
+}
+
+/* Handle on hover */
+.modal::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border-radius: 32px;
+}

@@ -8,7 +8,6 @@ import Link from "next/link";
 import Button from "./Button";
 
 const MobileMenu = () => {
-  const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   return (
     <div className="md:hidden flex flex-1 justify-between items-center h-full  py-4 px-4">
@@ -29,10 +28,14 @@ const MobileMenu = () => {
       >
         <ul className="list-none flex sm:flex justify-end items-start flex-col gap-4">
           <li className="text-center  w-full py-4">
-            <Link href="/">Products</Link>
+            <Link onClick={() => setToggle(false)} href="/products">
+              Products
+            </Link>
           </li>
           <li className="text-center  w-full py-4">
-            <Link href="/">About us</Link>
+            <Link onClick={() => setToggle(false)} href="/about">
+              About us
+            </Link>
           </li>
           <li className="mt-4">
             <Button>Contact us</Button>

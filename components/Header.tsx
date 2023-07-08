@@ -11,16 +11,18 @@ const Header = () => {
   return (
     <div className="fixed top-0 w-full  z-10 bg-white ">
       <div className="hidden md:flex items-center justify-between max-w-[80%] mx-auto">
-        <Image
-          className="border-2 border-solid"
-          alt="Logo da +55"
-          src={logo}
-          width={90}
-          height={90}
-        />
+        <Link href="/">
+          <Image
+            className="border-2 border-solid"
+            alt="Logo da +55"
+            src={logo}
+            width={90}
+            height={90}
+          />
+        </Link>
         <nav className="flex items-center gap-x-8 text-md">
-          <Link href="/">Products</Link>
-          <Link href="/">About us</Link>
+          <Link href="/products">Products</Link>
+          <Link href="/about">About us</Link>
         </nav>
         <Button>Contact us</Button>
       </div>

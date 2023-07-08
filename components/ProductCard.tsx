@@ -1,5 +1,4 @@
 import React from "react";
-import { coffeeProducts } from "../constants";
 import Image, { StaticImageData } from "next/image";
 import cafe1 from "../public/pictures/cafe1.jpg";
 import SecondaryButton from "./SecondaryButton";
@@ -9,11 +8,15 @@ interface ProductCardProps {
   name: string;
   price: number;
   src: StaticImageData;
+  style: string;
+  id: string | number;
 }
 
-const ProductCard = ({ name, price, src }: ProductCardProps) => {
+const ProductCard = ({ name, price, src, style, id }: ProductCardProps) => {
   return (
-    <div className="sm:min-w-[300px] min-w-[320px]  h-[400px] bg-white rounded-[32px] p-5 flex flex-col justify-between gap-2">
+    <div
+      className={`rounded-[32px] p-5 flex flex-col justify-between gap-2 ${style}`}
+    >
       <h3 className="font-semibold text-xl">{name}</h3>
       <p className="font-bold text-lg text-tree">AUS{price}</p>
       <div className="h-[160px] rounded-[16px]">
@@ -25,7 +28,7 @@ const ProductCard = ({ name, price, src }: ProductCardProps) => {
       </div>
       <div className="flex items-center justify-between">
         <Button style="py-1 px-1 text-sm">Buy now</Button>
-        <SecondaryButton style="py-1 px-[6px] text-sm">
+        <SecondaryButton link={`products/${id}`} style="py-1 px-[6px] text-sm">
           Learn More
         </SecondaryButton>
       </div>

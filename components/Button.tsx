@@ -4,6 +4,7 @@ export interface ButtonProps {
   children: React.ReactNode;
   style?: string;
   onClick?: () => void;
+  link?: string;
 }
 
 const Button = ({ children, style, onClick }: ButtonProps) => {
