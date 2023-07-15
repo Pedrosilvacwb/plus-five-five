@@ -28,7 +28,7 @@ const ProductCard = ({ name, price, src, style, id }: ProductCardProps) => {
       </div>
       <div className="flex items-center justify-between">
         <Button style="py-1 px-1 text-sm">Buy now</Button>
-        <SecondaryButton link={`products/${id}`} style="py-1 px-[6px] text-sm">
+        <SecondaryButton link={`/products/${id}`} style="py-1 px-[6px] text-sm">
           Learn More
         </SecondaryButton>
       </div>
