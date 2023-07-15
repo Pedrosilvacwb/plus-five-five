@@ -20,7 +20,7 @@ const ProductCarousel = ({ cardStyles }: ProductCarouselProps) => {
   const [distance, setDistance] = useState(0);
   const [maxDistance, setMaxDistance] = useState(0);
   const [moving, setMoving] = useState(332);
-  const mobile = useMedia("(max-width: 40rem)");
+  const mobile = useMedia("(max-width: 400px)");
 
   const carousel = useRef(null);
   useEffect(() => {
@@ -28,7 +28,7 @@ const ProductCarousel = ({ cardStyles }: ProductCarouselProps) => {
       carousel?.current?.scrollWidth - carousel?.current?.offsetWidth * 1.2
     );
     if (mobile) {
-      setMoving(325);
+      setMoving(332);
     } else {
       setMoving(332);
     }
