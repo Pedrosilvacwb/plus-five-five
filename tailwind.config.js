@@ -20,6 +20,22 @@ module.exports = {
       },
       white: "#ffffff",
     },
+
+    keyframes: {
+      scaleIn: {
+        "0%": { transform: "scale(0)" },
+        "70%": { transform: "scale(1.2)" },
+        "100%": { transform: "scale(1)" },
+      },
+      fadeIn: {
+        "0%": { opacity: "0" },
+        "100%": { opacity: "1" },
+      },
+    },
+    animation: {
+      scaleIn: "scaleIn 0.4s",
+      fadeIn: "fadeIn 0.4s",
+    },
   },
   plugins: [],
 };

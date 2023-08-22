@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import menu from "../public/menu.svg";
 import close from "../public/close.svg";
-import { navLinks } from "@/constants/";
+
 import logo from "@/public/logo/ROUND/PNG/_LOGO_ROUND_PLUS_FIFTY_FIVE.png";
 import Image from "next/image";
 import Link from "next/link";

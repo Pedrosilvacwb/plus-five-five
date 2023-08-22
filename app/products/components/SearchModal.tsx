@@ -1,4 +1,3 @@
-import { coffeeProducts } from "@/constants";
 import Link from "next/link";
 import React from "react";
 
@@ -7,6 +6,7 @@ interface SearchModalProps {
   onClose: () => void;
   searchTerm: string;
   onSearch: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  products: any[];
 }
 
 const SearchModal = ({
@@ -14,15 +14,16 @@ const SearchModal = ({
   onClose,
   searchTerm,
   onSearch,
+  products,
 }: SearchModalProps) => {
   if (!visible) return null;
   return (
     <div
       onClick={onClose}
-      className="fixed inset-0 transition-opacity top-0 left-0 w-full h-[100vh] z-10 bg-[#000] bg-opacity-50 backdrop-blur-sm flex sm:items-center justify-center"
+      className="animate-fadeIn fixed inset-0 transition-opacity top-0 left-0 w-full h-[100vh] z-10 bg-[#000] bg-opacity-50 backdrop-blur-sm flex sm:items-center justify-center"
     >
       <div
-        className={`sm:w-[600px] w-[100vw] ${
+        className={`sm:w-[600px] w-[100vw]  ${
           searchTerm && " bg-white "
         } sm:rounded-[32px] h-[400px] max-h-[400px]`}
       >
@@ -36,7 +37,7 @@ const SearchModal = ({
         />
         <div className="max-h-[310px] overflow-auto modal">
           {searchTerm &&
-            coffeeProducts.map(
+            products.map(
               (prod) =>
                 prod.name
                   .toLowerCase()

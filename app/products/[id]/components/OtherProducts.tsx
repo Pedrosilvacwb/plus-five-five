@@ -1,5 +1,5 @@
 import Container from "@/components/Container";
-import Products from "@/components/Home/Products";
+
 import ProductCarousel from "@/components/ProductCarousel";
 import React from "react";
 

@@ -40,7 +40,7 @@ const HeroSection = () => {
       <video
         style={{
           objectFit: "cover",
-          opacity: 0.5,
+          opacity: 0.7,
           height: "100%",
           width: "100%",
         }}
@@ -49,7 +49,7 @@ const HeroSection = () => {
         loop
       >
         <source
-          src="/video/mm003942-coffee-beans-032-1080p-a057-c033-0331oq-001_iEBWvpb1.mp4"
+          src="https://res.cloudinary.com/dcdedf20g/video/upload/v1691286141/samples/ecommerce/mm003942-coffee-beans-032-1080p-a057-c033-0331oq-001_iEBWvpb1_xrryck.mp4"
           type="video/mp4"
         />
       </video>
