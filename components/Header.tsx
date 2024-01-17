@@ -1,8 +1,7 @@
 "use client";
-import React from "react";
 
-import Image from "next/image";
 import logo from "@/public/logo/ROUND/PNG/_LOGO_ROUND_PLUS_FIFTY_FIVE.png";
+import Image from "next/image";
 import Link from "next/link";
 import Button from "./Button";
 import MobileMenu from "./MobileMenu";
@@ -22,7 +21,7 @@ const Header = () => {
         </Link>
         <nav className="flex items-center gap-x-8 text-md">
           <Link href="/products">Products</Link>
-          <Link href="/about">About us</Link>
+          <Link href="/about-us">About us</Link>
         </nav>
         <Button>Contact us</Button>
       </div>
